@@ -54,4 +54,11 @@ export class Tokenizer<TokenType> {
 
     throw new Error(`Unexpected input: `);
   }
+
+  printAllTokens() {
+    let token;
+    while ((token = this.next())) {
+      console.log(token);
+    }
+  }
 }
